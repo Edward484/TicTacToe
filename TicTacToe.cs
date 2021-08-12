@@ -63,7 +63,7 @@ namespace TicTacToe
                     throw new InvalidCastException();
                 if (succes)
                 {
-                    if(moveI >0 && moveI < 9)
+                    if(moveI >0 && moveI <= 9)
                     {
                         for (int i = 0; i < 3; i++)
                         {
@@ -135,6 +135,7 @@ namespace TicTacToe
                     else
                     {
                         changeTurns();
+                        gameRunning();
                     }
 
                 }
